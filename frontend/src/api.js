@@ -2,11 +2,10 @@ import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
 
 // the env variable should start with vite in this application
-const apiUrl = "/choreo-apis/awbo/backend/rest-api-be2/v1.0";
-
-const api = axios.create({
+const apiUrl="https://7859b438-d317-41b8-b167-8bb87f4e118a-dev.e1-us-cdp-2.choreoapis.dev/notes/backend-service/v1"
+const api=axios.create({
   baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
-});
+})
 
 
 // authorization should start with bearer and a space 
