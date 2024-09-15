@@ -2,7 +2,7 @@ import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
 
 // the env variable should start with vite in this application
-const apiUrl="https://7859b438-d317-41b8-b167-8bb87f4e118a-dev.e1-us-cdp-2.choreoapis.dev/notes/backend-service/v1"
+const apiUrl="/choreo-apis/notes/backend-service/v1"
 const api=axios.create({
   baseURL: apiUrl,
 })
